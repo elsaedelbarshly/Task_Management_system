@@ -18,7 +18,7 @@ class CreateManagersTable extends Migration
             $table->string('section');
             $table->date('join_date');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('membership_id')->nullable();
+            $table->unsignedBigInteger('membership_id');
             $table->timestamps();
         });
     }
