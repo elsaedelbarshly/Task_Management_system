@@ -17,7 +17,7 @@ class CreateOrganizationsTable extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->boolen('status')->default(1);
+            $table->boolean('status')->default(1);
             $table->unsignedBigInteger('manager_id');
             $table->timestamps();
         });
