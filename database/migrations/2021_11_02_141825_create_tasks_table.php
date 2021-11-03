@@ -21,8 +21,8 @@ class CreateTasksTable extends Migration
             $table->date('to');
             $table->unsignedBigInteger('employee_id');
             $table->unsignedBigInteger('manager_id');
-            $table->unsignedBigInteger('organization_id')->nullable();
-            $table->unsignedBigInteger('status_id')->nullable();
+            $table->unsignedBigInteger('organization_id');
+            $table->unsignedBigInteger('status_id');
             $table->timestamps();
         });
     }
