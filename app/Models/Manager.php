@@ -11,6 +11,7 @@ use App\Models\Task;
 class Manager extends Model
 {
     use HasFactory;
+
     protected $table = 'managers';
     protected $fillable = [
         'section',
