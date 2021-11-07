@@ -21,6 +21,11 @@
         "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
+        "files": [
+            "app/Helpers/ApiExceptionHandler.php",
+            "app/Helpers/FileUploader.php",
+            "app/Helpers/RESTApi.php"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
