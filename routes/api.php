@@ -3,6 +3,16 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Api\AdminController;
+use App\Http\Controllers\Api\EmployeeController;
+use App\Http\Controllers\Api\ManagerController;
+use App\Http\Controllers\Api\MembershipController;
+use App\Http\Controllers\Api\OrganizationController;
+use App\Http\Controllers\Api\StatusTaskController;
+use App\Http\Controllers\Api\TaskController;
+use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\UserTypeController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
