@@ -17,27 +17,24 @@ class EmployeeSeeder extends Seeder
     public function run()
     {
         $emp = new Employee();
-        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->address = Str::random(50);
-        $emp->phone_no = '+0201201891564';
         $emp->education = Str::random(10);
-        $emp->gender = 0;
+        $emp->phone = '+0201201891564';
+        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->save();
 
         $emp = new Employee();
-        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->address = Str::random(50);
-        $emp->phone_no = '+0201201891564';
         $emp->education = Str::random(10);
-        $emp->gender = 0;
+        $emp->phone = '+0201201891564';
+        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->save();
 
         $emp = new Employee();
-        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->address = Str::random(50);
-        $emp->phone_no = '+0201201891564';
         $emp->education = Str::random(10);
-        $emp->gender = 0;
+        $emp->phone = '+0201201891564';
+        $emp->date_of_birth = Carbon::parse('2021-11-02');
         $emp->save();
     }
 }
