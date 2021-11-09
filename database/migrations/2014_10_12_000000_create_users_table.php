@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->enum('gender',['male' , 'female']);
             $table->boolean('status')->default(0);
             $table->text('profile_photo')->nullable();
-            $table->unsignedBigInteger('user_type_id');
+            $table->unsignedBigInteger('user_type_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
