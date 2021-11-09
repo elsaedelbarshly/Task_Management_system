@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('education');
             $table->string('phone');
             $table->date('date_of_birth');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->unsignedBigInteger('organization_id')->nullable();
             $table->timestamps();
         });
