@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->name = 'medo';
-        $user->username = 'medo12';
+        $user->username = 'medo123';
         $user->email = 'medo@gmail.com';
         $user->gender = 'male';
         $user->password = Hash::make(123456);
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->name = 'menaa';
-        $user->username = 'menna12';
+        $user->username = 'menna124';
         $user->email = 'menaam@gmail.com';
         $user->gender = 'female';
         $user->password = Hash::make(123456);
@@ -43,7 +43,7 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->name = 'islam';
-        $user->username = 'islam12';
+        $user->username = 'islam125';
         $user->email = 'islam@gmail.com';
         $user->gender = 'male';
         $user->password = Hash::make(123456);
@@ -51,7 +51,7 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->name = 'mostafa';
-        $user->username = 'memostafa12';
+        $user->username = 'memostafa126';
         $user->email = 'mostafa@gmail.com';
         $user->gender = 'male';
         $user->password = Hash::make(123456);
@@ -59,7 +59,7 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->name = 'elnamr';
-        $user->username = 'elnamr12';
+        $user->username = 'elnamr127';
         $user->email = 'elnamr@gmail.com';
         $user->gender = 'male';
         $user->password = Hash::make(123456);

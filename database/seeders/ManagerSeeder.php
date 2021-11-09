@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 use App\Models\Manager;
 class ManagerSeeder extends Seeder
 {
@@ -13,6 +15,14 @@ class ManagerSeeder extends Seeder
      */
     public function run()
     {
-        factory(Manager::class,2)->create();
+        $man = new Manager();
+        $man->section = Str::random(10);
+        $man->join_date = Carbon::now();
+        $man->save();
+
+        $man = new Manager();
+        $man->section = Str::random(10);
+        $man->join_date = Carbon::now();
+        $man->save();
     }
 }

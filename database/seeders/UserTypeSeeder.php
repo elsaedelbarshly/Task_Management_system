@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\UserType;
+use App\Models\User_Type;
 use Illuminate\Database\Seeder;
 
 class UserTypeSeeder extends Seeder
@@ -14,19 +14,19 @@ class UserTypeSeeder extends Seeder
      */
     public function run()
     {
-        $usertype = new UserType();
+        $usertype = new User_Type();
         $usertype->type = 'Super Admin';
         $usertype->save();
 
-        $usertype = new UserType();
+        $usertype = new User_Type();
         $usertype->type = 'Admin';
         $usertype->save();
 
-        $usertype = new UserType();
+        $usertype = new User_Type();
         $usertype->type = 'Employee';
         $usertype->save();
 
-        $usertype = new UserType();
+        $usertype = new User_Type();
         $usertype->type = 'Mmanger';
         $usertype->save();
     }
