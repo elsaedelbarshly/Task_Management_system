@@ -18,7 +18,7 @@ class OrganizationResource extends JsonResource
             'name'=>$this->name,
             'description'=>$this->description,
             'status'=>$this->status,
-            // 'manager_id'=>$this->manager_id,
+            'Manager'=>$this->when($this->managers()->exists(),$this->managers->users->name),
         ];
     }
 }

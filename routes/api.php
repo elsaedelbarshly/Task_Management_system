@@ -27,3 +27,20 @@ use App\Http\Controllers\Api\UserTypeController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//membership crud
+Route::get('membership-list',[MembershipController::class,'index']);
+Route::post('get-membership',[MembershipController::class,'show']);
+Route::post('create-membership',[MembershipController::class,'store']);
+Route::post('update-membership',[MembershipController::class,'update']);
+Route::post('delete-membership',[MembershipController::class,'destory']);
+
+//organization fun
+Route::get('organization-list',[OrganizationController::class,'index']);
+Route::post('get-organization',[OrganizationController::class,'show']);
+Route::post('create-organization',[OrganizationController::class,'store']);
+Route::post('update-organization',[OrganizationController::class,'update']);
+Route::post('delete-organization',[OrganizationController::class,'destroy']);
+
+Route::post('active-organization',[OrganizationController::class,'active']);
+Route::post('inActive-organization',[OrganizationController::class,'inActive']);
