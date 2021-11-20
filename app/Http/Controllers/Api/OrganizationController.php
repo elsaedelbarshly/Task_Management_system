@@ -10,6 +10,7 @@ use App\Models\Manager;
 use App\Models\Task;
 use App\Http\Traits\ApiResponse;
 use App\Http\Resources\OrganizationResource;
+use App\Http\Resources\AssignOrgabiztionResource;
 use App\Http\Request\OrganizationRequest;
 class OrganizationController extends Controller
 {
@@ -86,6 +87,14 @@ class OrganizationController extends Controller
             return 'InActive Organization';
         }
         throw new \App\Exceptions\NotFoundException;
+    }
+
+    public function assignOrganizationToManager(Request $request)
+    {
+        $org = Organization::where('id',$request->id)->update([
+            'manager_id'=>$request->manager_id,
+        ]);
+        return $this->sendJson(new AssignOrgabiztionResource($manger));
     }
 
 

@@ -16,6 +16,7 @@ class EmployeeResource extends JsonResource
     {
         return [
             'name' => $this->when($this->User()->exists(),$this->User->name),
+            'username' => $this->when($this->User()->exists(),$this->User->username),
             'email' => $this->when($this->User()->exists(),$this->User->email),
             'address'=> $this->address,
             'education'=> $this->education,
