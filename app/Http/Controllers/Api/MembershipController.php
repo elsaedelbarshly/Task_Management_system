@@ -65,4 +65,6 @@ class MembershipController extends Controller
         }
         throw new \App\Exceptions\NotFoundException;
     }
+
+
 }

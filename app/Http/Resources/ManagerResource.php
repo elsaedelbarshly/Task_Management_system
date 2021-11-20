@@ -16,11 +16,10 @@ class ManagerResource extends JsonResource
     {
         return [
             'name' => $this->when($this->User()->exists(),$this->User->name),
+            'username' => $this->when($this->User()->exists(),$this->User->username),
             'email' => $this->when($this->User()->exists(),$this->User->email),
             'section' => $this->section,
             'join_date' => $this->join_date,
-            // 'user_id' => $this->user_id,
-            // 'membership_id' => $this->membership_id,
         ];
     }
 }
